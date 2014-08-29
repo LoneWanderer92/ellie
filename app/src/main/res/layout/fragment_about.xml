@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.lonewanderer.ellie.AboutFrag"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/txtCopy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVers"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imgEllieLogoAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtVers"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ellie"
+        android:contentDescription="@string/app_name"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="12dp"/>
+
+    <TextView
+        android:id="@+id/txtVers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="50dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

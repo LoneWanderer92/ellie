@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.lonewanderer.ellie.QRScan"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/qr_sample"
+        android:id="@+id/imgVwQr" />
+
+    <ImageView
+        android:layout_above="@+id/txtVwvLocalName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/sample_logo"
+        android:visibility="gone"
+        android:id="@+id/imgLocalLogo" />
+
+    <TextView
+        android:id="@+id/txtVwvLocalName"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:gravity="top|center_horizontal|center_vertical"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/txtVwvLocalCity"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtVwvLocalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:gravity="top|center_horizontal|center_vertical"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/txtVwvLocalCountryCode"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtVwvLocalCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:gravity="top|center_horizontal|center_vertical"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

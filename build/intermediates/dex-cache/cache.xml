@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\dghisalberti.ADDING\Documents\Projects\Ellie\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.0-rc1-3993718f6091f53466d1de3c89727d83bf1c21eb.jar"
+        jar="C:\android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.0-rc1\support-annotations-21.0.0-rc1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="57c343f05b73b923bf2502b05851dbfe12193dcb"/>
+    <item
+        dex="C:\Users\dghisalberti.ADDING\Documents\Projects\Ellie\app\build\intermediates\pre-dexed\debug\classes-754a710c86815535cded2b4fa30cd7022c73ed41.jar"
+        jar="C:\Users\dghisalberti.ADDING\Documents\Projects\Ellie\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0-rc1\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="7ae84435ebc95f67a3f5e511025e96caa8688da2"/>
+    <item
+        dex="C:\Users\dghisalberti.ADDING\Documents\Projects\Ellie\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.0-rc1-ccc3df25d4bb29ae7dcce785476e5209464535f6.jar"
+        jar="C:\Users\dghisalberti.ADDING\Documents\Projects\Ellie\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0-rc1\libs\internal_impl-21.0.0-rc1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="d1a625e8a94bf7c73e0f9d30ad1b483ff6ea64e9"/>
+
+</pre-dex-items>

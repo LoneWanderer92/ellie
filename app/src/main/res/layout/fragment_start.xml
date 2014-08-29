@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.lonewanderer.ellie.QRScan"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/section_label"
+        android:layout_alignRight="@+id/section_label"
+        android:layout_below="@+id/section_label"
+        android:gravity="center_horizontal"
+        android:text="@string/START_Info" />
+
+    <ImageView
+        android:id="@+id/imgEllieLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/section_label"
+        android:layout_alignLeft="@+id/section_label"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/section_label"
+        android:src="@drawable/ic_launcher"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="50dp"
+        android:text="@string/START_Welcome"
+        android:textAppearance="?android:attr/textAppearanceLargePopupMenu" />
+</RelativeLayout>
