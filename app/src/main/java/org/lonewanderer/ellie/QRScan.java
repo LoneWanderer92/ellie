@@ -1,7 +1,5 @@
 package org.lonewanderer.ellie;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -13,8 +11,6 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,10 +35,6 @@ public class QRScan extends Fragment implements NavigationDrawerFragment.Navigat
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
-
-    private View imgLocalLogo;
-    private View imgQrSample;
-    private int mShortAnimationDuration;
 
     /**
      * Use this factory method to create a new instance of
@@ -149,20 +141,20 @@ public class QRScan extends Fragment implements NavigationDrawerFragment.Navigat
 
                 if(info == null) {
                     contents = "ERROR";
-                    ((ImageView)getView().findViewById(R.id.imgVwQr)).setVisibility(View.GONE);
+                    (getView().findViewById(R.id.imgVwQr)).setVisibility(View.GONE);
                     ((TextView)getView().findViewById(R.id.txtVwvLocalName)).setText("Locale: " + contents);
-                    ((TextView)getView().findViewById(R.id.txtVwvLocalName)).setVisibility(View.VISIBLE);
+                    (getView().findViewById(R.id.txtVwvLocalName)).setVisibility(View.VISIBLE);
                 }
                 else if(info.length == 3)
                 {
-                    ((ImageView)getView().findViewById(R.id.imgVwQr)).setVisibility(View.GONE);
-                    ((ImageView)getView().findViewById(R.id.imgLocalLogo)).setVisibility(View.VISIBLE);
+                    (getView().findViewById(R.id.imgLocalLogo)).setVisibility(View.VISIBLE);
+                    (getView().findViewById(R.id.imgVwQr)).setVisibility(View.GONE);
                     ((TextView)getView().findViewById(R.id.txtVwvLocalName)).setText("Locale: " + info[0]);
                     ((TextView)getView().findViewById(R.id.txtVwvLocalCity)).setText("Città: " + info[1]);
                     ((TextView)getView().findViewById(R.id.txtVwvLocalCountryCode)).setText("Provincia: " + info[2]);
-                    ((TextView)getView().findViewById(R.id.txtVwvLocalName)).setVisibility(View.VISIBLE);
-                    ((TextView)getView().findViewById(R.id.txtVwvLocalCity)).setVisibility(View.VISIBLE);
-                    ((TextView)getView().findViewById(R.id.txtVwvLocalCountryCode)).setVisibility(View.VISIBLE);
+                    (getView().findViewById(R.id.txtVwvLocalName)).setVisibility(View.VISIBLE);
+                    (getView().findViewById(R.id.txtVwvLocalCity)).setVisibility(View.VISIBLE);
+                    (getView().findViewById(R.id.txtVwvLocalCountryCode)).setVisibility(View.VISIBLE);
                 }
             } else if (resultCode ==  Activity.RESULT_CANCELED) {
                 // Handle cancel
