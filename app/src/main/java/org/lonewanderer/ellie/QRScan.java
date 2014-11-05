@@ -71,7 +71,7 @@ public class QRScan extends Fragment implements NavigationDrawerFragment.Navigat
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
         try {
-            Intent intent = new Intent("com.google.zxing.client.android.SCANa");
+            Intent intent = new Intent("com.google.zxing.client.android.SCAN");
             intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
             startActivityForResult(intent, 0);
 
